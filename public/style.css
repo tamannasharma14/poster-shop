@@ -29,7 +29,6 @@ html, body {
     height: 100%;
     margin: 0;
 }
-
 body {
     font-family: 'Open Sans', sans-serif;
     background-color: #F3F3F3;
@@ -365,4 +364,23 @@ body {
     #product-list-bottom > div {
         display: none;
     }
+}
+.fade-enter{
+    opacity: 0;
+}
+.fade-enter-active{
+    transition: opacity 0.5s;
+}
+[v-cloak] > *
+{
+    display:none;
+}
+[v-cloak]> #loading
+{
+ display: block;
+ padding: 1em;   
+}
+#loading
+{
+   display: none; 
 }
